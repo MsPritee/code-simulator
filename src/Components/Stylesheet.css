@@ -1,0 +1,156 @@
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.code-panel{
+    flex: 1;
+    background-color: rgb(64, 61, 61);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.output-panel{
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+}
+
+.code-panel,
+.output-panel {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-box{
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0.5rem;
+    display: flex;
+    flex: 1;
+    border-radius: 1rem;
+    /* flex-basis: 0; */
+    /* transition: width 0.3s ease-in-out; */
+}
+
+
+.icon-button {
+    font-family: 'Material Icons';
+    font-size: 28px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 90%;
+    background-color: rgb(4, 4, 4);
+    width: 32px;
+    height: 30px;
+    border: none;
+    color: white;
+    margin: 0.1rem;
+}
+
+.theme-toggle-button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 90%;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .theme-toggle-button.default-theme {
+    background-color: rgb(64, 61, 61) /* Blue color for default theme */
+  }
+  
+  .theme-toggle-button.material-theme {
+    background-color: #ffffff; /* Red color for material theme */
+  }
+  
+  .title-right{
+    display: flex;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    justify-content: space-between;
+  }
+
+  .title-left{
+    display: flex;
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    justify-content: space-between;
+    font-weight: bold;
+}
+  
+.language-icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    margin-right: 8px;
+  }
+  
+  .html-icon {
+    background-image: url('./Images/html.svg') /* Replace with actual path */
+  }
+  
+  .css-icon {
+    background-image: url('./Images/css.svg'); /* Replace with actual path */
+  }
+  
+  .javascript-icon {
+    background-image: url('./Images/Javscript.png'); /* Replace with actual path */
+  }
+
+.code-box.collapsed{
+    height: 0;
+    overflow: hidden;
+    border: none;
+    border-radius: 1rem;    
+}
+
+.title{
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    background-color: black;
+    color: aqua;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    
+}
+
+.code-mirror-wrapper {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    flex-grow: 1;
+    overflow: hidden;   
+}
+
+
+.panel{
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: flex 0.3s ease-in-out;
+
+}
+
+/* .code-box .collapsed{
+    flex-grow: 0;
+} */
+
+/* .code-box .collapsed .CodeMirror-scroll{
+    position: absolute;
+} */
+
+
+    /* border-style: double;
+    border-color: rgb(250, 242, 11); */

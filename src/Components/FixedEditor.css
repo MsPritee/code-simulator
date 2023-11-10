@@ -1,0 +1,37 @@
+.fixed-editor {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #f5f5f5;
+    display: flex;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .language-list {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .language-option {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .language-option.active {
+    background-color: #444;
+  }
+  
+  .editor-container {
+    padding: 10px;
+    flex: 4;
+    overflow-y: auto;
+  }
+  
